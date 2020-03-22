@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::view('/bulksms', 'bulksms');
+Route::post('/bulksms', 'BulkSmsController@sendSms');
